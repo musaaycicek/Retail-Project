@@ -15,6 +15,6 @@ top_customer_id = customer_sales.idxmax()
 
 
 
-print("En çok alışveriş yapan müşteri ID:", top_customer_id)
+print("En çok alışveriş yapan müşteri ID:",top_customer_id)
 # En çok müşteri hangisi ise onun verilerini getir
 print(df_customers[df_customers["CUSTOMER_ID"] == top_customer_id])

@@ -6,6 +6,7 @@ conn=conn_db()
 
 veri=pd.read_sql("SELECT * FROM CUSTOMERS",conn)
 
+
 pivotdata=veri.pivot_table(values="CUSTOMER_ID",index="NAME",columns="CITY")
 
 print(pivotdata)

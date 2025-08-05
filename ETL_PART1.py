@@ -10,7 +10,8 @@ conn=conn_db()
 # En çok satan ürünler
    
 df_sales=pd.read_sql("SELECT * FROM sales",conn)
+print(df_sales)
 satıs=df_sales.groupby("PRODUCT_ID")["QUANTITY"].sum().sort_values(ascending=False).head()
 
-print(satıs)
+#print(satıs)
 conn.close()
